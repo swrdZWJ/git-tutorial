@@ -2,6 +2,8 @@
 feature-A
 fix-B
 feature-C
+
+
 一、初始设置
 1.1SSH KEY
 $ ssh -keygen -t  -C "your_email@example.com"
@@ -13,6 +15,8 @@ $ cat ~/.ssh/id_rsa.pub
 添加成功之后，邮箱会收到提示“公共密匙添加完成”
 1.3登陆
 $  ssh -T git@github.com
+
+
 二、基本操作
 2.1初始化仓库
 mkdir git-tutorial
