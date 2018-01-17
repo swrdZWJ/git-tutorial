@@ -40,6 +40,11 @@ $ git diff  
 养成一个习惯：在执行git commit之前先执行git diff HEAD命令，查看本次提交和上次提交之间的差别，等确定完之后再进行提交。（这里的HEAD是指向当前分支中最新一次提交的指针）
 
 
+三推送至远程仓库
+3.1添加远程仓库
+git remote add orign git@github.com:swrdZWJ/git-tutorial.git
+
+
 
 
 
