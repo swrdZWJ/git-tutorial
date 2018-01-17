@@ -33,7 +33,7 @@ git log 命令后加目录名只会显示该目录下的日志，若是文件名
        如果想查看提交所带来的改动 git log -p README.md
 2.7 查看更改前后的差别
 $ git diff  
-在执行git commit  
+养成一个习惯：在执行git commit之前先执行git diff HEAD命令，查看本次提交和上次提交之间的差别，等确定完之后再进行提交。（这里的HEAD是指向当前分支中最新一次提交的指针）
 
 
 
