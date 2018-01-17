@@ -40,10 +40,22 @@ $ git diff  
 养成一个习惯：在执行git commit之前先执行git diff HEAD命令，查看本次提交和上次提交之间的差别，等确定完之后再进行提交。（这里的HEAD是指向当前分支中最新一次提交的指针）
 
 
-三推送至远程仓库
+三、推送至远程仓库
 3.1添加远程仓库
-git remote add orign git@github.com:swrdZWJ/git-tutorial.git
+git remote add orign git@github.com:swrdZWJ/git-tutorial.git  执行完之后，自动将该远程仓库的名称设置为origin（标识符）
+3.2推送至远程仓库
+git push -u origin master  这样执行完之后，当前分支的内容就会被推送到远程仓库origin的master分支
+3.3推送至master以外的分支
+$git checkout -b feature-D   (创建feature-D分支)
+$git push -u origin feature-D  （推送是远程仓库中feature-D分支中）
 
+
+四、从远程仓库中获取
+在一个空白目录下
+$git clone git@github.com:swrdZWJ/git-tutorial.git    执行完之后默认处于master分支之下
+$cd git-tutorial
+$git branch  查看分支信息  $git branch -a查看当前分支的相关信息
+$git checkout -b feature-D origin/feature-D   -b参数后面是本地仓库中新建的分支和远程仓库分支命名相同
 
 
 
